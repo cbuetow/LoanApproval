@@ -11,13 +11,13 @@
     <h1>Loan Approval</h1>
     <form id="loanForm">
         <label for="salary">Salary: </label>
-        <input id="salary" name="Salary" type="number" required> <br> <br>
+        <input id="salary" name="Salary" type="number" min="0" max="300000" step="1000" required> <br> <br>
 
         <label for="creditScore">Credit Score: </label>
-        <input id="creditScore" name="Credit Score" type="number" required> <br> <br>
+        <input id="creditScore" name="Credit Score" type="number" min="300" max="850" required> <br> <br>
 
         <label for="monthsAtJob">Months at job: </label>
-        <input id="monthsAtJob" name="Months At Job" type="number" required> <br> <br>
+        <input id="monthsAtJob" name="Months At Job" type="number" min="0" max="600" required> <br> <br>
 
         <button>Am I qualified?</button>
         <p id="loanApprovalOutput"></p>
