@@ -51,7 +51,7 @@ $(document).ready(function () {
         {
             $("p#loanApprovalOutput").text("Loan Approved!");
         }
-        else if (salary <= 40000 && monthsAtJob > 12)
+        else if (salary >= 40000 && monthsAtJob > 12)
         {
             $("p#loanApprovalOutput").text("Loan Approved!");
         }
