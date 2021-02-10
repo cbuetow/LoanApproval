@@ -11,30 +11,6 @@ $(document).ready(function () {
         let creditScore = parseFloat($("input#creditScore").val());
         let monthsAtJob = parseFloat($("input#monthsAtJob").val());
 
-        if(creditScore < 300)
-        {
-            alert("Error: Credit score cannot be below 300");
-            return;
-        }
-
-        if(creditScore > 850)
-        {
-            alert("Error: Credit score cannot be above 850");
-            return;
-        }
-
-        if(monthsAtJob < 0)
-        {
-            alert("Error: Months cannot be negative");
-            return;
-        }
-
-        if(monthsAtJob >= 600)
-        {
-            alert("Look, if you need a loan that's not our problem.");
-            return;
-        }
-
         if (salary >= 40000 && creditScore >= 600)
         {
             $("p#loanApprovalOutput").text("Loan Approved!");
